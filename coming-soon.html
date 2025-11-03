@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rédaction en cours - Portfolio IT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --primary: #3b82f6;
+      --secondary: #0284c7;
+      --dark: #0f172a;
+      --dark-light: #1e293b;
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --accent: #06b6d4;
+      --border: rgba(14, 165, 233, 0.2);
+      --header-height: 80px;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ========================================
+       HEADER
+       ======================================== */
+
+    .site-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 1rem 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.3rem;
+      transition: all 0.3s;
+    }
+
+    .logo:hover {
+      transform: scale(1.05);
+    }
+
+    .menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .menu a {
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s;
+      padding: 0.55rem 0.8rem;
+      border-radius: 0.6rem;
+    }
+
+    .menu a:hover {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .btn--primary {
+      background: var(--primary);
+      color: white !important;
+      border-radius: 0.7rem;
+      padding: 0.7rem 1.5rem !important;
+      transition: all 0.3s;
+    }
+
+    .btn--primary:hover {
+      background: var(--secondary);
+      transform: translateY(-2px);
+    }
+
+    /* ========================================
+       MAIN CONTENT
+       ======================================== */
+
+    main {
+      margin-top: var(--header-height);
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .coming-soon-container {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .coming-soon-icon {
+      font-size: 5rem;
+      margin-bottom: 2rem;
+      display: inline-block;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    .coming-soon-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, var(--text), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .coming-soon-container p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .construction-details {
+      background: var(--dark-light);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      margin: 2rem 0;
+      text-align: left;
+    }
+
+    .construction-details h3 {
+      color: var(--accent);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+
+    .construction-details p {
+      text-align: center;
+      margin: 0;
+    }
+
+    .back-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.3s;
+      box-shadow: 0 4px 15px rgba(14, 165, 233, 0.3);
+    }
+
+    .back-button:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 25px rgba(14, 165, 233, 0.5);
+    }
+
+    @keyframes loading {
+      0% { width: 20%; }
+      50% { width: 80%; }
+      100% { width: 20%; }
+    }
+
+    /* ========================================
+       FOOTER
+       ======================================== */
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background: var(--dark-light);
+      color: var(--text-muted);
+      border-top: 1px solid var(--border);
+      margin-top: auto;
+    }
+
+    /* ========================================
+       RESPONSIVE
+       ======================================== */
+
+    @media (max-width: 768px) {
+      .coming-soon-icon {
+        font-size: 3.5rem;
+      }
+
+      .coming-soon-container h1 {
+        font-size: 1.8rem;
+      }
+
+      .coming-soon-container p {
+        font-size: 1rem;
+      }
+
+      .construction-details {
+        padding: 1.5rem;
+      }
+
+      .back-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="logo" href="portfolio.html">
+        <span>💻</span>
+        <span>Portfolio IT</span>
+      </a>
+      <nav class="menu">
+        <a href="portfolio.html#accueil">Accueil</a>
+        <a href="portfolio.html#apropos">À propos</a>
+        <a href="portfolio.html#competences">Compétences</a>
+        <a href="portfolio.html#projets">Projets</a>
+        <a class="btn--primary" href="portfolio.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="coming-soon-container">
+      <div class="coming-soon-icon">✍️</div>
+      
+      <h1>Rédaction en cours</h1>
+      <p>Cette page est actuellement en cours de rédaction et sera bientôt disponible avec des contenus détaillés et intéressants.</p>
+
+      <div class="construction-details">
+        <h3>🚧 Travail en cours</h3>
+        <p>Je finalise actuellement le contenu de cette page pour vous offrir la meilleure expérience possible.</p>
+      </div>
+
+      <p style="font-size: 0.95rem; margin-top: 2rem;">
+        En attendant, n'hésitez pas à explorer les autres sections du portfolio ou à me contacter directement.
+      </p>
+
+      <a href="portfolio.html#projets" class="back-button">← Retour aux projets</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portfolio IT. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>

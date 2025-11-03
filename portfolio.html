@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio IT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav">
+            <a class="logo" href="#accueil">
+                <span>💻</span>
+                <span>Portfolio IT</span>
+            </a>
+            <input id="nav-toggle" type="checkbox" aria-label="Menu" />
+            <label for="nav-toggle" class="burger" aria-hidden="true">
+                <span></span>
+            </label>
+            <nav class="menu">
+                <a href="#accueil">Accueil</a>
+                <a href="#apropos">À propos</a>
+                <a href="#skills">Compétences</a>
+                <a href="#projets">Projets</a>
+                <a class="btn--primary" href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="accueil">
+        <div class="hero-content">
+            <h1>Professionnel IT – Passionné par l'informatique</h1>
+            <p class="hero-subtitle">
+                Cinq années d'expérience en alternance dans l'informatique, du support technique 
+                à l'assistance à la chefferie de projet. Autoformation actuellement en Cloud 
+                et intelligence artificielle.
+            </p>
+            <a href="#contact" class="contact-button">Me contacter</a>
+        </div>
+    </section>
+
+    <section id="apropos" class="section fade-in">
+        <div class="section__head">
+            <h2>À propos de moi</h2>
+            <p class="muted">Parcours en alternance</p>
+        </div>
+
+        <div class="about__grid">
+            <div class="card">
+                <p>
+                    Je m'appelle <strong>Axel</strong>. Passionné par l’infrastructure et les environnements techniques, j’ai débuté en <strong>support IT</strong> avant d’évoluer vers l’<strong>administration systèmes et réseaux</strong>.
+                    Mon parcours, complété par un <strong>Master RNCP niveau 7</strong>, m’a permis d’acquérir une solide compréhension des environnements informatiques et de m’orienter vers le rôle de <strong>SysOps</strong>.
+                </p>
+                <p>
+                    J’apprécie la <strong>gestion et l’exploitation des infrastructures</strong>, la <strong>supervision en temps réel</strong> et la <strong>mise en place de solutions fiables et sécurisées</strong> pour garantir la disponibilité des services et la stabilité des systèmes.
+                </p>
+            </div>
+
+            <ul class="about__facts">
+                <li><i class="fa-solid fa-screwdriver-wrench"></i> Technicien Superieur en Technologie du Numérique</li>
+                <li><i class="fa-solid fa-briefcase"></i> Administrateur Systèmes Réseaux et Base De Données</li>
+                <li><i class="fa-solid fa-graduation-cap"></i> Chef de Projet Informatique</li>
+            </ul>
+
+            <div class="portfolio-section">
+                <img src="parcours.png" alt="Schéma de mon parcours" style="width:150%; height:auto;">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="skills" class="section section--alt">
+        <div class="container">
+            <header class="section__head">
+                <h2>Compétences</h2>
+                <p class="muted">Techniques & transversales</p>
+            </header>
+
+            <div class="skills__grid">
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-server"></i> Administration Systèmes</h3>
+                    <p>Windows Server (AD, SCCM ...), Linux (Debian/Ubuntu), BDD (MySQL, REDIS, MangoDB), scripts Bash.</p>
+                </div>
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-network-wired"></i> Réseaux & Sécurité</h3>
+                    <p>Pare-feu (OPNsense), CCNA (scolaire), VPN, diagnostic réseau.</p>
+                </div>
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-cubes"></i> Virtualisation & Conteneurisation</h3>
+                    <p>Proxmox, VMware, Docker, K3S.</p>
+                </div>
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-robot"></i> IA & Automatisation</h3>
+                    <p>Python, déploiement de LLM, scripts d’automatisation, NoCode (n8n).</p>
+                </div>
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-users"></i> Gestion de Projet</h3>
+                    <p>Planification, gestion des risques et du changement, méthodes & outils projet.</p>
+                </div>
+                <div class="skill card">
+                    <h3><i class="fa-solid fa-thumbs-up"></i> Transverse / Complémentaires</h3>
+                    <p>Anglais B1/B2 (Languaskill), Bureautique, Permis B.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projets" class="fade-in">
+        <h2>Projets</h2>
+        <div class="carousel-container">
+            <button class="carousel-button prev" id="prevBtn">◀︎</button>
+            
+            <div class="carousel-wrapper">
+                <div class="projects-grid" id="projectsGrid">
+                    
+                    <div class="project-card">
+                        <div class="project-icon">🔒</div>
+                        <h3>Plateforme d'Auto-hébergement</h3>
+                        <p>Déploiement d'une solution d'auto-hébergement sécurisée pour divers services (cloud personnel, médias, monitoring). Accent mis sur la sécurité et la sauvegarde.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Docker Compose</span>
+                            <span class="tech-badge">Reverse Proxy</span>
+                            <span class="tech-badge">Automatisation</span>
+                            <span class="tech-badge">Backup</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">📦</div>
+                        <h3>Projet WMS</h3>
+                        <p>Mise en place d'un système de gestion de stock en tant que chef de projet. Initiation → Préparation → Contrôle → Déploiement → Clôture.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Plannification</span>
+                            <span class="tech-badge">Gestion des risques</span>
+                            <span class="tech-badge">Management du changement</span>
+                            <span class="tech-badge">Formation</span>
+                            <span class="tech-badge">Processus</span>
+                            <span class="tech-badge">KPI</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🌐</div>
+                        <h3>Migration d'un Active Directory</h3>
+                        <p>Afin d'omogéiniser l'infrastructure informatique des filiales avec la maison mère, j'ai pu participer à un projet de migration d'AD d'une filiale française.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Active Directory</span>
+                            <span class="tech-badge">Windows server</span>
+                            <span class="tech-badge">Batch</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">⚙️</div>
+                        <h3>Outils d'impression d'étiquette</h3>
+                        <p>Création d'un outils permettant de générer des étiquettes en grande quantité avec un QR code unique et de les imprimer</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">UI</span>
+                            <span class="tech-badge">Automatisation</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🏠</div>
+                        <h3>Homelab Personnel</h3>
+                        <p>Infrastructure domestique complète avec virtualisation, conteneurisation et automatisation. Mise en place d'un environnement d'apprentissage et de test pour des technologies DevOps.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Proxmox</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Linux</span>
+                            <span class="tech-badge">Networking</span>
+                            <span class="tech-badge">K3S</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">📊</div>
+                        <h3>Portfolio</h3>
+                        <p>Création d'un portfolio disponible en ligne. Construit à l'aide d'outil IA comme ChatGPT et Claud.ia !
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">HTML</span>
+                            <span class="tech-badge">CSS</span>
+                            <span class="tech-badge">JS</span>
+                            <span class="tech-badge">Prompting</span>
+                            <span class="tech-badge">Hébergement</span>
+                        </div>
+                        <a href="coming-soon.html" class="project-button">En savoir plus <span class="arrow">➜</span></a>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-button next" id="nextBtn">▶︎</button>
+        </div>
+    </section>
+    <section id="contact" class="cta-section">
+      <h2>Contact</h2>
+      <p>N'hésitez pas à me contacter pour discuter plus en détail de mon experience ou simplement échanger mes coordonées.</p>
+      <a href="www.linkedin.com/in/axel-galecki" target="_blank" class="cta-button">Prendre Contact 💬</a>
+    </section>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created by myself with ChatGPT and claud.IA - Icons used in the diagram created by : <a href="https://www.flaticon.com/authors/vectorsmarket15" target="_blank" title="icons">vectorsmarket15 - Flaticon</a></p>
+        <p>&copy; 2025 Portfolio. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
