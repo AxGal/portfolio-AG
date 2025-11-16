@@ -1,0 +1,132 @@
+.project-detail {
+    padding: 5rem 2rem 3rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    text-decoration: none;
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+}
+
+.back-link:hover {
+    transform: translateX(-5px);
+}
+
+.project-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.project-header .project-icon {
+    font-size: 4rem;
+    margin: 0 auto 1rem;
+}
+
+.project-header h1 {
+    margin-bottom: 1rem;
+}
+
+.project-meta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.project-detail-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    margin-bottom: 2rem;
+}
+
+.project-detail-card h2 {
+    text-align: left;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.project-detail-card h2::after {
+    display: none;
+}
+
+.project-detail-card p, .project-detail-card ul {
+    color: var(--text-muted);
+    line-height: 1.8;
+}
+
+.project-detail-card ul {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.project-detail-card li {
+    margin-bottom: 0.5rem;
+}
+
+.tech-stack {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.tech-item {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.tech-item strong {
+    display: block;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.highlight-box {
+    background: rgba(59, 130, 246, 0.1);
+    border-left: 3px solid var(--primary);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.gallery-item {
+    background: var(--bg-soft);
+    border: 1px solid var(--border);
+    border-radius: 0.8rem;
+    padding: 1rem;
+    text-align: center;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.gallery-item img {
+  height: 210px;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}

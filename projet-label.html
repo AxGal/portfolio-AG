@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homelab Personnel - Portfolio IT</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="logo" href="index.html">
+        <span>💻</span>
+        <span>Portfolio IT</span>
+      </a>
+      <nav class="menu">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#projets">Projets</a>
+        <a class="btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-detail">
+    <a href="index.html#projets" class="back-link">← Retour aux projets</a>
+
+    <header class="project-header">
+      <div class="project-icon">🖨️</div>
+      <h1>Logiciel d'impression d'étiquettes</h1>
+      <p class="project-subtitle">
+        Outil de génération d'étiquettes avec QR code unique pour l'étiquettage de moteur.
+      </p>
+      <div class="project-meta">
+        <span class="tech-badge">Python</span>
+        <span class="tech-badge">Windows</span>
+        <span class="tech-badge">QR Code</span>
+        <span class="tech-badge">Automatisation</span>
+      </div>
+    </header>
+
+    <section class="project-detail-card">
+      <h2>📋 Contexte et Objectifs</h2>
+      <p>
+        Ce projet visait à répondre à un besoin client qui souhaitait pouvoir scanner des QR codes au lieu de codes barres. Initialement, les étiquettes étaient générées par l'ERP et il n'éxistait pas d'option d'impression avec QRCode. L'objectif était donc de créer un outils de génération de QR Code en fonction du numéro de série du produit.
+      </p>
+      <div class="highlight-box">
+        <strong>Objectifs principaux :</strong>
+        <ul>
+          <li>Automatiser une génération de QR code unique</li>
+          <li>Créer une interface utilisateurs facile d'utilisation</li>
+          <li>Imprimer automatiquement</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="project-detail-card">
+      <h2>🏗️ Architecture Technique</h2>
+      <p>
+        L'outil repose sur un script python qui permet de créer une interface utilisateurs simple et générer un QR code en fonction d'un numéro de série dédié 
+      </p>
+      <div class="tech-stack">
+        <div class="tech-item">
+          <strong>Langage</strong>
+          <span>Python</span>
+        </div>
+        <div class="tech-item">
+          <strong>Interface</strong>
+          <span>GUI</span>
+        </div>
+        <div class="tech-item">
+          <strong>OS</strong>
+          <span>Windows</span>
+        </div>
+        <div class="tech-item">
+          <strong>interconnexion</strong>
+          <span>Imprimante, étiqueteuse</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail-card">
+      <h2>🔧 Défis et Solutions</h2>
+      <p><strong>Génération de QR Code :</strong> Utilisation de librairies python permettant de générer des QR codes</p>
+      <p><strong>Utilisable par tous :</strong> Création d'une interface graphique simple.</p>
+      <p><strong>Automatisation :</strong> Création d'un script python avec boucle pour la génération des numéros de séries.</p>
+      <p><strong>ISO 27001 :</strong> Rédaction d'une instruction technique en respectant la norme ISO 27001.</p>
+    </section>
+
+    <section class="project-detail-card">
+      <h2>🖼️ Captures d'écran</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img src="images/gui.png">
+        </div>
+        <div class="gallery-item">
+          <img src="images/label.png">
+        </div>
+      </div>
+    </section>
+
+    <section class="project-detail-card">
+      <h2>📈 Résultats et Apprentissages</h2>
+      <div class="highlight-box">
+        <strong>Compétences développées :</strong>
+        <ul>
+          <li>Python</li>
+          <li>Intégration de librairies</li>
+          <li>Rédaction d'une instruction technique</li>
+          <li>Interconnection avec des périphériques type imprimantes / étiqueteuses</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portfolio IT. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
+

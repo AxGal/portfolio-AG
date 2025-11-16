@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homelab Personnel - Portfolio IT</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="projet2.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <a class="logo" href="index.html">
+        <span>💻</span>
+        <span>Portfolio IT</span>
+      </a>
+      <nav class="menu">
+        <a href="index.html#accueil">Accueil</a>
+        <a href="index.html#apropos">À propos</a>
+        <a href="index.html#competences">Compétences</a>
+        <a href="index.html#projets">Projets</a>
+        <a class="btn--primary" href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="project-detail">
+    <a href="index.html#projets" class="back-link">← Retour aux projets</a>
+
+    <section class="intro-section">
+      <div class="project-icon">🔒</div>
+      <h1>Auto-hébergement</h1>
+      <p class="project-subtitle">
+        Un projet d’auto-hébergement me permettant d’héberger mes services, de sécuriser mes données et de diminuer ma dépendance aux fournisseurs cloud majeurs.
+      </p>
+    </section>
+
+    <div class="tabs-container">
+      <nav class="tabs-nav">
+        <button class="tab-btn active" data-tab="0">📋 Vue d'ensemble</button>
+        <button class="tab-btn" data-tab="1">⚙️ Architecture</button>
+        <button class="tab-btn" data-tab="2">🎯 Services</button>
+        <button class="tab-btn" data-tab="3">🔧 Défis</button>
+      </nav>
+    </div>
+
+    <div class="tabs-content">
+      <!-- TAB 1: Vue d'ensemble -->
+      <div class="tab-pane active">
+        <div class="showcase-block">
+          <div class="showcase-content">
+            <h2>À Propos du Projet</h2>
+            <p>
+              L’auto-hébergement est une approche qui consiste à administrer ses propres services sur une infrastructure personnelle.
+              C’est une manière d’obtenir une autonomie complète : contrôle des données, configuration sur mesure, sécurité maîtrisée et compréhension approfondie des mécanismes systèmes et réseaux.
+            </p>
+            <p>
+              Ce type de projet renforce la pratique de l’administration, de la supervision et de la maintenance, tout en réduisant la dépendance aux plateformes centralisées.
+            </p>
+            <div class="tag-group">
+              <span class="tech-badge">Proxmox</span>
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Linux</span>
+              <span class="tech-badge">Services</span>
+              <span class="tech-badge">Networking</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="masonry-grid">
+          <div class="content-block">
+              <h3>🎯 Objectif Principal</h3>
+              <p>Déployer une plateforme d’auto-hébergement fiable et sécurisée pour centraliser mes services personnels 
+                 et maîtriser entièrement mes données.</p>
+          </div>
+          
+          <div class="content-block">
+              <h3>💡 Vision</h3>
+              <p>Créer une infrastructure indépendante des fournisseurs externes, configurable selon mes besoins, 
+                 et capable d’héberger durablement différents services (stockage, monitoring, outils du quotidien).</p>
+          </div>
+          
+          <div class="content-block">
+              <h3>📚 Apprentissage</h3>
+              <p>Comprendre en profondeur le fonctionnement des services auto-gérés : déploiement, sécurité, 
+                 maintenance, sauvegardes et optimisation de l’infrastructure.</p>
+          </div>
+          </div>
+        </div>
+
+      <!-- TAB 2: Architecture -->
+      <div class="tab-pane">
+        <div class="showcase-block">
+          <div class="showcase-content">
+            <h2>Infrastructure</h2>
+            <p>Une infrastructure pensée pour la fiabilité, la sécurité et la gestion quotidienne de services auto-hébergés.</p>
+          </div>
+        </div>
+
+        <div class="masonry-grid">
+          <div class="content-block">
+            <h3>🖥️ Hyperviseur</h3>
+            <ul>
+              <li>Optiplex Micro 3080</li>
+              <li>Proxmox VE 8.x</li>
+              <li>Machines virtuelles (VMs)</li>
+              <li>Gestion centralisée</li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <h3>📦 Conteneurisation</h3>
+            <ul>
+              <li>Machine Virtuelle</li>
+              <li>Docker & Docker Compose</li>
+              <li>K3S (Kubernetes léger)</li>
+              <li>Reverse proxy (Traefik)</li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <h3>🌐 Réseau</h3>
+            <ul>
+              <li>Optiplex Micro 3070</li>
+              <li>Firewall (OPNsense)</li>
+              <li>VPN (WireGuard)</li>
+              <li>DNS (AdGuard)</li>
+            </ul>
+          </div>
+          <div class="content-block">
+            <h3>💾 Stockage</h3>
+            <ul>
+              <li>Microserver HP Gen 8</li>
+              <li>NAS local RAID 5</li>
+              <li>Snapshots Proxmox</li>
+              <li>NextCloud personnel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB 3: Services -->
+      <div class="tab-pane">
+        <div class="showcase-block">
+          <div class="showcase-content">
+            <h2>Services Déployés</h2>
+            <p>Des services auto-hébergés et personnalisés pour répondre à mes besoins quotidiens, tout en gardant la maîtrise des données.</p>
+          </div>
+        </div>
+
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Fonction</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Traefik</strong></td>
+              <td>Reverse proxy</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>TrueNAS</strong></td>
+              <td>NAS</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>Home Assistant</strong></td>
+              <td>Gestion de la domotique</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>Portainer</strong></td>
+              <td>Gestion des conteneurs</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>NextCloud</strong></td>
+              <td>Cloud personnel</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>Only Office</strong></td>
+              <td>Suite bureautique avec collaboration</td>
+              <td><span class="status-badge status-partial">Partiel</span></td>
+            </tr>
+            <tr>
+              <td><strong>Adguard</strong></td>
+              <td>DNS & ad-blocking</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>Pterodactyl</strong></td>
+              <td>Panel de gestion de serveurs de jeux</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+            <tr>
+              <td><strong>Uptime Kuma</strong></td>
+              <td>Monitoring de disponibilité</td>
+              <td><span class="status-badge status-partial">Partiel</span></td>
+            </tr>
+            <tr>
+              <td><strong>Prometheus</strong></td>
+              <td>Collecte des métriques</td>
+              <td><span class="status-badge status-planned">À Faire</span></td>
+            </tr>
+            <tr>
+              <td><strong>Graphana</strong></td>
+              <td>Visualisation & alerting</td>
+              <td><span class="status-badge status-planned">À Faire</span></td>
+            </tr>
+            <tr>
+              <td><strong>Wireguard</strong></td>
+              <td>VPN</td>
+              <td><span class="status-badge status-active">Actif</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- TAB 4: Défis -->
+      <div class="tab-pane">
+        <div class="masonry-grid">
+          <div class="content-block">
+            <h3>⚡ Gestion des Ressources</h3>
+            <div class="accordion-text">
+                CPU et RAM limités demandent une optimisation intelligente. Solution : conteneurisation par rapport aux VMs, 
+                Consommation électrique contrôlée (<= 70w) avec automatisation d'arrêt et de mise en service
+              </div>
+          </div>
+          <div class="content-block">
+            <h3>🔒 Sécurité et Isolation Réseau</h3>
+            <div class="accordion-text">
+                Accès externe + données sensibles = risques. Solution : segmentation en VLANs, firewall granulaire, 
+                VPN pour accès distance, services isolés, authentification centralisée, certificats SSL/TLS générés automatiquement.
+              </div>
+          </div>
+          <div class="content-block">
+            <h3>💾 Disponibilité et Continuité</h3>
+            <div class="accordion-text">
+                Gestion des pertes de données. Solution : Sauvegardes régulières de mes machines et conteneurs vers un NAS.
+                Cette approche assure une récupération rapide en cas de défaillance, tout en restant adaptée à un environnement d’auto-hébergement personnel.
+              </div>
+          </div>
+        </div>
+      </div>    
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Portfolio IT. Tous droits réservés.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
